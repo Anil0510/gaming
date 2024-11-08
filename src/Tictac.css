@@ -1,0 +1,67 @@
+body{
+    overflow-x: hidden;
+}
+.board {
+    padding: 10px;
+    color:rgb(28, 24, 24);
+   
+  }
+  
+  .board-row {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .Square {
+    border: 1px solid black;
+    height: 100px;
+    width: 100px;
+    display: grid;
+    grid-template-columns: repeat(3, 100px); 
+    place-items: center;
+    cursor: pointer;
+    font-size: 24px;
+    background-color: #343439;
+    color: rgb(224, 229, 232);
+    
+  }
+  
+  .playagain{
+    color: black;
+    border-color: yellow;
+    width:10%;
+    height:30% 
+  }
+  @media(max-width:1024px){
+    .Square{
+      height: 80px;
+      width:80px;
+      font-size: 20px;
+    }
+    .playagain{
+      width:15%;
+      height:25%
+    }
+  }
+  @media(max-width:768px){
+    .Square{
+      height:70px;
+      width:70px;
+      font-size: 18px;
+    }
+    .playagain{
+      width:20%;
+      height:20%
+    }
+  }
+  @media(max-width:480px){
+    .Square{
+      height:60px;
+      width:60px;
+      font-size: 16px;
+    }
+    .playagain{
+      width:30%;
+      height:15%
+    }
+  }
